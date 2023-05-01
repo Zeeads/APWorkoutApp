@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		44144F2329C2099A00FAFE0D /* APWorkoutAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44144F2229C2099A00FAFE0D /* APWorkoutAppApp.swift */; };
-		44144F2529C2099A00FAFE0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44144F2429C2099A00FAFE0D /* ContentView.swift */; };
 		44144F2729C2099C00FAFE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44144F2629C2099C00FAFE0D /* Assets.xcassets */; };
 		44144F2A29C2099C00FAFE0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44144F2929C2099C00FAFE0D /* Preview Assets.xcassets */; };
+		4451BBF82A0018C500C23A9F /* WeightLift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451BBF72A0018C500C23A9F /* WeightLift.swift */; };
+		4455FB9D29FCADC100E05553 /* EditExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4455FB9C29FCADC000E05553 /* EditExerciseView.swift */; };
+		4455FB9F29FCBDAE00E05553 /* DeleteExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4455FB9E29FCBDAE00E05553 /* DeleteExercise.swift */; };
+		446CF9F629ED8EAF003CD568 /* OneRepMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CF9F529ED8EAF003CD568 /* OneRepMax.swift */; };
+		446CF9F829ED9130003CD568 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CF9F729ED9130003CD568 /* ContentView.swift */; };
+		446CF9FA29F96A10003CD568 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CF9F929F96A10003CD568 /* PlanView.swift */; };
+		447249C929FCACA9004FC5E6 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447249C829FCACA9004FC5E6 /* AddExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44144F1F29C2099A00FAFE0D /* APWorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APWorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44144F2229C2099A00FAFE0D /* APWorkoutAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APWorkoutAppApp.swift; sourceTree = "<group>"; };
-		44144F2429C2099A00FAFE0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44144F2629C2099C00FAFE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44144F2929C2099C00FAFE0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4451BBF72A0018C500C23A9F /* WeightLift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLift.swift; sourceTree = "<group>"; };
+		4455FB9C29FCADC000E05553 /* EditExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExerciseView.swift; sourceTree = "<group>"; };
+		4455FB9E29FCBDAE00E05553 /* DeleteExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteExercise.swift; sourceTree = "<group>"; };
+		446CF9F529ED8EAF003CD568 /* OneRepMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMax.swift; sourceTree = "<group>"; };
+		446CF9F729ED9130003CD568 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		446CF9F929F96A10003CD568 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		447249C829FCACA9004FC5E6 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,16 @@
 			isa = PBXGroup;
 			children = (
 				44144F2229C2099A00FAFE0D /* APWorkoutAppApp.swift */,
-				44144F2429C2099A00FAFE0D /* ContentView.swift */,
+				446CF9F729ED9130003CD568 /* ContentView.swift */,
+				446CF9F929F96A10003CD568 /* PlanView.swift */,
+				4455FB9C29FCADC000E05553 /* EditExerciseView.swift */,
+				446CF9F529ED8EAF003CD568 /* OneRepMax.swift */,
+				4451BBF72A0018C500C23A9F /* WeightLift.swift */,
+				447249C829FCACA9004FC5E6 /* AddExerciseView.swift */,
 				44144F2629C2099C00FAFE0D /* Assets.xcassets */,
+				44144F3029C209C800FAFE0D /* Views */,
+				44144F3229C209DF00FAFE0D /* Logic */,
+				44144F3129C209D500FAFE0D /* Components */,
 				44144F2829C2099C00FAFE0D /* Preview Content */,
 			);
 			path = APWorkoutApp;
@@ -63,8 +83,30 @@
 			isa = PBXGroup;
 			children = (
 				44144F2929C2099C00FAFE0D /* Preview Assets.xcassets */,
+				4455FB9E29FCBDAE00E05553 /* DeleteExercise.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44144F3029C209C800FAFE0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44144F3129C209D500FAFE0D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		44144F3229C209DF00FAFE0D /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44144F2529C2099A00FAFE0D /* ContentView.swift in Sources */,
+				446CF9F629ED8EAF003CD568 /* OneRepMax.swift in Sources */,
 				44144F2329C2099A00FAFE0D /* APWorkoutAppApp.swift in Sources */,
+				4451BBF82A0018C500C23A9F /* WeightLift.swift in Sources */,
+				4455FB9F29FCBDAE00E05553 /* DeleteExercise.swift in Sources */,
+				446CF9F829ED9130003CD568 /* ContentView.swift in Sources */,
+				447249C929FCACA9004FC5E6 /* AddExerciseView.swift in Sources */,
+				4455FB9D29FCADC100E05553 /* EditExerciseView.swift in Sources */,
+				446CF9FA29F96A10003CD568 /* PlanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

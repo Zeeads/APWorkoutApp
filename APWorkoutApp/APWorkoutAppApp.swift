@@ -11,7 +11,14 @@ import SwiftUI
 struct APWorkoutAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                        List {
+                            NavigationLink(destination: OneRepMaxView()) {
+                                Text("Calculate One Rep Max")
+                            }
+                        }
+                        .navigationTitle("Gym App")
+                    }
         }
     }
 }
