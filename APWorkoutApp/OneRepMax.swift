@@ -2,19 +2,19 @@
 //  OneRepMax.swift
 //  APWorkoutApp
 //
-//  Created by Zeead Sowelam23 on 4/17/23.
-//
+
 
 import SwiftUI
 
 struct OneRepMaxView: View {
     @State private var weight = ""
     @State private var reps = ""
-    @State private var maxesList:[Double] = []
 
     private var exerciseTypes = [
         "Squat",
-        "Deadlift"
+        "Deadlift",
+        "Clean",
+        "Incline Bench"
     ]
 
     var oneRepMax: Double {
@@ -22,24 +22,31 @@ struct OneRepMaxView: View {
             return 0
         }
 
-        return weight * (1 + reps / 30)
+        return weight * (1 + (reps - 1) / 30)
+    }
+    
+    var maxesList : [Double] {
+        return maxes(max: oneRepMax)
     }
     
     func maxes(max : Double) -> [Double] {
         var maxes: [Double] = []
-        
-        var max : Double = 0
-        for index in 0...1{
+        for index in 0...(exerciseTypes.count - 1){
+            var max : Double = max
             if exerciseTypes[index] == "Squat" {
-                max = 1.3 * max
+                max = 1.33 * max
             }
             else if exerciseTypes[index] == "Deadlift" {
-                max = 2 * max
+                max = 1.67 * max
             }
-            
+            else if exerciseTypes[index] == "Clean" {
+                max = 0.8 * max
+            }
+            else if exerciseTypes[index] == "Incline Bench" {
+                max = 0.85 * max
+            }
             maxes.append(max)
         }
-        
         return maxes
     }
 
@@ -59,24 +66,16 @@ struct OneRepMaxView: View {
             Text("One Rep Bench Max: \(oneRepMax) lbs")
                 .font(.headline)
                 .padding(.top, 20)
-                
-            Button(action: {
-                maxesList = maxes(max: self.oneRepMax)
-                
-            }) {
-                Text("Calculate Maxes")
-            }
             
             List{
-                ForEach(0...1, id: \.self){ i in
-                    Text("\(exerciseTypes[i]) Max : \(maxesList[i])")
+                ForEach(0...(exerciseTypes.count - 1), id: \.self){ i in
+                   Text("\(exerciseTypes[i]) Max : \(maxesList[i]) lbs")
                 }
             }
-            
             Spacer()
         }
         .padding()
-        .navigationTitle("Bench Press Calculator")
+        .navigationTitle("One Rep Max")
     }
 }
 
@@ -86,6 +85,4 @@ struct OneRepMaxView_Previews: PreviewProvider {
         OneRepMaxView()
     }
 }
-            
-//Squat max = Bench max * 1.33
-//Deadlift max = Bench max * 1.66
+

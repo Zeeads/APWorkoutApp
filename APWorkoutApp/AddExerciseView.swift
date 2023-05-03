@@ -2,8 +2,6 @@
 //  AddExerciseView.swift
 //  APWorkoutApp
 //
-//  Created by Zeead Sowelam23 on 4/28/23.
-//
 
 import SwiftUI
 

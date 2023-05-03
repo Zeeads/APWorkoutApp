@@ -2,11 +2,7 @@
 //  PlanView.swift
 //  APWorkoutApp
 //
-//  Created by Zeead Sowelam23 on 4/26/23.
-//
 
-
-//Need To Add 3 Things, Editing Ability, Delete Code, And a button to switch between Days
 import SwiftUI
 
 struct Exercise: Identifiable, Hashable {
@@ -18,7 +14,9 @@ struct Exercise: Identifiable, Hashable {
 }
 
 struct PlanView: View {
+    
     @State var exercises : [Exercise] = [Exercise(name: "Bench", sets: 5, reps: 10, weight: 155)]
+    
     @State var showAddExerciseView = false
     @State var showEditExerciseView = false
     @State var editingExercise : Exercise = Exercise(name: "Bench", sets: 5, reps: 10, weight: 155)
@@ -33,6 +31,8 @@ struct PlanView: View {
                     .fontWeight(.bold)
                     .padding()
                VStack{
+                   //This is where I render in the information for each exercise in the list
+                   
                     List{
                         ForEach(deleteExercise.exercises) { exercise in
                             HStack {
@@ -42,6 +42,8 @@ struct PlanView: View {
                                     Text("Sets: \(exercise.sets) Reps: \(exercise.reps) Weight: \(exercise.weight)")
                                         .font(.subheadline)
                                 }
+                                
+                                
                                 Spacer()
                                 //Buttons for each exercise in the list
                                 Button(action: {

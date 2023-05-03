@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  APWorkoutApp
 //
-//  Created by Zeead Sowelam23 on 4/17/23.
-//
 
 import SwiftUI
 
