@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		44144F2729C2099C00FAFE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44144F2629C2099C00FAFE0D /* Assets.xcassets */; };
 		44144F2A29C2099C00FAFE0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44144F2929C2099C00FAFE0D /* Preview Assets.xcassets */; };
+		4414AEDC2A1523FB0052F8F9 /* MaxRepFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414AEDB2A1523FB0052F8F9 /* MaxRepFunc.swift */; };
 		445522552A005B40007854B5 /* APWorkoutAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445522542A005B40007854B5 /* APWorkoutAppApp.swift */; };
 		4455FB9D29FCADC100E05553 /* EditExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4455FB9C29FCADC000E05553 /* EditExerciseView.swift */; };
 		4455FB9F29FCBDAE00E05553 /* DeleteExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4455FB9E29FCBDAE00E05553 /* DeleteExercise.swift */; };
@@ -22,6 +23,7 @@
 		44144F1F29C2099A00FAFE0D /* APWorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APWorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44144F2629C2099C00FAFE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44144F2929C2099C00FAFE0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4414AEDB2A1523FB0052F8F9 /* MaxRepFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxRepFunc.swift; sourceTree = "<group>"; };
 		445522542A005B40007854B5 /* APWorkoutAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APWorkoutAppApp.swift; sourceTree = "<group>"; };
 		4455FB9C29FCADC000E05553 /* EditExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExerciseView.swift; sourceTree = "<group>"; };
 		4455FB9E29FCBDAE00E05553 /* DeleteExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteExercise.swift; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 				446CF9F929F96A10003CD568 /* PlanView.swift */,
 				4455FB9C29FCADC000E05553 /* EditExerciseView.swift */,
 				446CF9F529ED8EAF003CD568 /* OneRepMax.swift */,
+				4414AEDB2A1523FB0052F8F9 /* MaxRepFunc.swift */,
+				4414AEDA2A1523920052F8F9 /* Controller */,
 				447249C829FCACA9004FC5E6 /* AddExerciseView.swift */,
 				44144F3029C209C800FAFE0D /* Views */,
 				44144F3229C209DF00FAFE0D /* Logic */,
@@ -104,6 +108,13 @@
 				44144F2629C2099C00FAFE0D /* Assets.xcassets */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		4414AEDA2A1523920052F8F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				446CF9F629ED8EAF003CD568 /* OneRepMax.swift in Sources */,
 				4455FB9F29FCBDAE00E05553 /* DeleteExercise.swift in Sources */,
 				446CF9F829ED9130003CD568 /* ContentView.swift in Sources */,
+				4414AEDC2A1523FB0052F8F9 /* MaxRepFunc.swift in Sources */,
 				447249C929FCACA9004FC5E6 /* AddExerciseView.swift in Sources */,
 				4455FB9D29FCADC100E05553 /* EditExerciseView.swift in Sources */,
 				446CF9FA29F96A10003CD568 /* PlanView.swift in Sources */,

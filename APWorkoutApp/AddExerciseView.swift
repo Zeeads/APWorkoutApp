@@ -27,6 +27,7 @@ struct AddExerciseView: View {
                         .keyboardType(.numberPad)
                 }
                 Section {
+                    //Button that brings up a view to add a newExercise with parameters of name, sets, reps, and weight which by default are blank
                     Button(action: {
                         let newExercise = Exercise(name: self.name, sets: Int(self.sets) ?? 0, reps: Int(self.reps) ?? 0, weight: Int(self.weight) ?? 0)
                         self.deleteExercise.exercises.append(newExercise)
